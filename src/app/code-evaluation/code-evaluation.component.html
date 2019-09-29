@@ -1,0 +1,51 @@
+<div class="flex-container">
+    <div class="flex-container-1 col-md-4">
+        <p style="color: white">
+            {{mockQuestion.question}}
+
+            {{mockQuestion.example}}
+        </p>
+    </div>
+    <div class="flex-container-2 col-md-8">
+        <div style="display: flex;flex-direction: row;justify-content:space-between">
+            <div><label for="techName" style="color: white">Java</label></div>
+            <div style="display: flex;flex-direction: row;margin-left: 50rem">
+                <select style="display: block;padding: 6px 12px; border-radius: 4px" name="language" id="language">
+                    <option value="Java">Java</option>
+                </select></div>
+            <div><label for="Hour" style="color: white">Hour {{hour}} Minute {{min}} Second {{sec}}</label></div>
+        </div>
+        <textarea name="codeEval" id="codeEval" class="textArea" rows="10"></textarea>
+        <button type="button" color="primary" (click)="showTestCases =!showTestCases">
+            Click here
+        </button>
+        <div *ngIf="showTestCases" class="ex1">
+            <div data-toggle="collapse" data-target="#demo" class="accordian-style">Test Case 1
+                <img style="margin-left: 800px" class="accordian-style" src="assets/cssElements/spinner.mov.gif" />
+            </div>
+            <div id="demo" class="collapse" style="color: white; font-family: Times New Roman, Times, serif;">
+                Input: a + b
+                Output: a + b
+                Result :
+            </div>
+            <div data-toggle="collapse" data-target="#demo1" class="accordian-style">Test Case 2</div>
+            <div id="demo1" class="collapse" style="color: white;">
+                Input: a + b
+                Output: a + b
+                Result :
+            </div>
+            <div data-toggle="collapse" data-target="#demo2" class="accordian-style">Test Case 3</div>
+            <div id="demo2" class="collapse">
+                Input: a + b
+                Output: a + b
+                Result :
+            </div>
+            <div data-toggle="collapse" data-target="#demo3" class="accordian-style">Test Case 4</div>
+            <div id="demo3" class="collapse">
+                Input: a + b
+                Output: a + b
+                Result :
+            </div>
+        </div>
+    </div>
+</div>

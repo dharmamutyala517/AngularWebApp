@@ -1,0 +1,4 @@
+{
+    "question" : "Given an array of length 10 , find the nth number based on input",
+    "example": "arr[10]={1,2,3,....}"
+}
